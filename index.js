@@ -16,7 +16,7 @@ bucket.manager().createPrimaryIndex(function() {
         console.log("Got result: %j", result.value);
         bucket.query(
           N1qlQuery.fromString(
-            "SELECT * FROM bucketname WHERE $1 in interests LIMIT 1"
+            "SELECT * FROM ameet WHERE $1 in interests LIMIT 1"
           ),
           ["African Swallows"],
           function(err, rows) {
