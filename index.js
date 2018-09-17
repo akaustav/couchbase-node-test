@@ -1,5 +1,5 @@
 const couchbase = require('couchbase');
-const cluster = new couchbase.Cluster('couchbase://192.168.86.79');
+const cluster = new couchbase.Cluster('couchbase://corbin');
 cluster.authenticate('nodejs', 'test123');
 const BUCKET_NAME = 'ameet';
 
